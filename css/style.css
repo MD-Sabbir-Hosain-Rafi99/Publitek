@@ -23,7 +23,29 @@ p {
   line-height: 0.8;
 }
 .container{
-    width: 1200px;
+    width: 1320px;
     margin: 0 auto;
 }
 /* All Global Css End */
+
+/* Header Part Start */
+#headerPart{
+    background: #3C0486;
+    padding: 30px 0;
+}
+
+.flexHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuList ul li{
+    display: inline-block;
+}
+.menuList ul li a{
+    font-family: "Raleway", serif;
+    color: aliceblue;
+    padding: 0 15px;
+}
+/* Header Part End */
