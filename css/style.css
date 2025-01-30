@@ -355,3 +355,15 @@ p .paraEdit{
     padding: 50px 0;
 }
 /* Body Layout Part Seven End */
+
+
+/* Body Layout Part 8 Start */
+#bodyLayout8{
+    background: #4B0088;
+}
+.flexbody8{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Body Layout Part 8 End */
