@@ -332,3 +332,18 @@ p .paraEdit{
     padding-bottom: 10px;
 }
 /* Body Layout Part Five End */
+
+
+/* Body Layout Part Six Start */
+#bannerPartSix{
+    background: url(../images/bannerSix.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.flexBannerSix{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Body Layout Part Six End */
