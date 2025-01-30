@@ -252,6 +252,50 @@ p .paraEdit{
     align-items: center;
     padding: 10px 0;
 }
-
-
 /* Body Layout Part Three End */
+
+/* Body Layout Part Four Start */
+#partFourLayout{
+    background: url(../images/layoutFour.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 134px;
+    padding-bottom: 122px;
+}
+
+.textPartThree p, span{
+    color: #F3F1D8;
+    font-family: "Raleway", serif;
+}
+.textPartThree p{
+    font-size: 28px;
+}
+.textPartThree span{
+    font-size: 48px;
+}
+
+.flexiconPart{
+    display: flex;
+    align-items: center;
+    padding-top: 46px;
+}
+
+.cardPartThree1{
+    padding: 18px 30px 0 30px;
+    text-align: center;
+    font-family: "Raleway", serif;
+}
+.cardPartThree1 p{
+    color: #F3F1D8;
+    padding: 18px 30px 0 30px;
+    text-align: center;
+    line-height: 28px;
+}
+.cardPartThree1 h1{
+    color: #F3F1D8;
+    padding: 18px 30px 0 30px;
+    text-align: center;
+    font-size: 53px;
+}
+/* Body Layout Part Four End */
