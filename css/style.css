@@ -299,3 +299,36 @@ p .paraEdit{
     font-size: 53px;
 }
 /* Body Layout Part Four End */
+
+
+
+/* Body Layout Part Five Start */
+#layoutPartFive{
+    padding-top: 99px;
+    padding-bottom: 92px;
+}
+.flexlayoutFive{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fiveTextContent{
+    width: 50%;
+    color: #3c0486;
+    font-family: "Raleway", serif;
+}
+.fiveTextContent h4{
+    font-size: 48px;
+    line-height: 55px;
+    
+}
+.fiveTextContent h5{
+    font-size: 22px; 
+}
+.fiveTextContent p{
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+/* Body Layout Part Five End */
