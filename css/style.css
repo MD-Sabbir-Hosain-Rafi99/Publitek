@@ -367,3 +367,15 @@ p .paraEdit{
     align-items: center;
 }
 /* Body Layout Part 8 End */
+
+
+/* Body Layout Part Nine Start */
+#bodyLayoutNine{
+    background: #3c0486;
+}
+.flexLayoutNine{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Body Layout Part Nine End */
