@@ -223,3 +223,35 @@ p {
     color: #fff;
 }
 /* Body Layout Part Two End */
+
+
+/* Body Layout Part Three Start */
+#bodyPartThree{
+    padding-top: 98px;
+    padding-bottom: 80px;
+}
+
+
+p .paraEdit{
+    font-family: "Raleway", serif;
+    color: #3c0486;
+    font-size: 22px;
+}
+
+.bodyPartTheeText p{
+    font-family: "Raleway", serif;
+    color: #3c0486;
+    font-size: 40px;
+    line-height: 42px;
+}
+
+
+.flexBodyPartThreeCards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+/* Body Layout Part Three End */
