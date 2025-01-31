@@ -139,7 +139,9 @@ p {
     column-gap: 80px;
     padding-top: 94px;
 }
-
+.textAndImage img{
+    display: block;
+}
 .textAndImage p{
     color: #fff;
     line-height: 22px;
