@@ -351,6 +351,9 @@ p .paraEdit{
     justify-content: space-evenly;
     align-items: center;
 }
+.picOne img{
+    display: block;
+}
 /* Body Layout Part Six End */
 
 
