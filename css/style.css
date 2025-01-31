@@ -85,6 +85,9 @@ p {
     font-family: "Raleway", serif;
     font-weight: bold;
 }
+.bannerImage img{
+    display: block;
+}
 /* Banner Part End */
 
 
