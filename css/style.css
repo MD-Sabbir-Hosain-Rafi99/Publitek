@@ -2,15 +2,24 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   display: inline-block;
 }
+
 ul,
 li {
   list-style-type: none;
 }
+
+body {
+  font-family: "Raleway", serif;
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -20,370 +29,470 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  line-height: 0.8;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .container {
-  width: 1320px;
+  width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
 }
 /* All Global Css End */
 
-/* Header Part Start */
+/* Header */
 #headerPart {
   background: #3c0486;
-  padding: 30px 0;
+  padding: 25px 0;
 }
 
 .flexHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
-.menuList ul li {
-  display: inline-block;
+.menuList ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
+
 .menuList ul li a {
-  font-family: "Raleway", serif;
   color: aliceblue;
-  padding: 0 15px;
+  font-size: 15px;
 }
-/* Header Part End */
 
-/* Banner Part Start */
+.iconHeader {
+  display: none;
+}
+
+/* Banner */
 #bannerPart {
   background: #3c0486;
-  padding-top: 150px;
+  padding: 120px 0 0;
 }
 
 .flexBanner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
-.bannerContentText{
-    padding: 38px 65px 0 35px;
-    font-family: "Raleway", serif;
+.bannerContentText {
+  flex: 1;
+  color: #fff;
 }
-.bannerContentText h1{
-    line-height: 67px;
-    font-size: 58px;
-    color: #fff;
-    padding-bottom: 10px;
+
+.bannerContentText h1 {
+  font-size: 58px;
+  line-height: 1.15;
+  padding: 10px 0;
 }
-.bannerContentText p{
-    font-size: 22px;
-    color: #fff;
-    padding-bottom: 10px;
-    line-height: 32px;
+
+.bannerContentText p {
+  font-size: 22px;
+  line-height: 1.5;
+  padding-bottom: 10px;
 }
-.bannerContentText a{
-    padding: 20px 40px;
-    background: orange;
-    color: #fff;
-    border-radius: 5px;
-    font-family: "Raleway", serif;
-    font-weight: bold;
+
+.bannerContentText a {
+  padding: 18px 35px;
+  background: orange;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
 }
-.bannerImage img{
+
+.bannerImage {
+  flex: 1;
+}
+
+/* Body Part One */
+.flexBodyPartOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 0;
+}
+
+.textOne,
+.textTwo {
+  flex: 1;
+}
+
+.textOne {
+  color: #3c0486;
+}
+
+.textOne p {
+  line-height: 1.5;
+  font-size: 28px;
+}
+
+.textOne strong {
+  font-size: 35px;
+}
+
+.textTwo p {
+  line-height: 1.8;
+}
+
+.textTwo strong {
+  color: #3c0486;
+}
+
+/* Layout Two */
+#bodyLayoutTwo {
+  background: url(../images/Image+Background.jpg) no-repeat center/cover;
+}
+
+.flexLayoutTwo {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding-top: 90px;
+}
+
+.textAndImage,
+.flexlayoutTwoCards {
+  flex: 1;
+}
+
+.textAndImage p {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.textAndImage span {
+  font-size: 38px;
+}
+
+.textAndImage strong {
+  font-size: 48px;
+}
+
+.flexlayoutTwoCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  text-align: center;
+  padding: 18px;
+}
+
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p,
+.card6 p {
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Layout Three */
+#bodyPartThree {
+  padding: 90px 0 80px;
+}
+
+.bodyPartTheeText p {
+  color: #3c0486;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+p .paraEdit {
+  color: #3c0486;
+  font-size: 22px;
+}
+
+.flexBodyPartThreeCards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding-top: 30px;
+}
+
+/* Layout Four */
+#partFourLayout {
+  background: url(../images/layoutFour.png) no-repeat center/cover;
+  padding: 120px 0;
+}
+
+.textPartThree p,
+.textPartThree span {
+  color: #f3f1d8;
+}
+
+.textPartThree p {
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.textPartThree span {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.flexiconPart {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  padding-top: 45px;
+}
+
+.cardPartThree1 {
+  text-align: center;
+  color: #f3f1d8;
+}
+
+.cardPartThree1 h1 {
+  font-size: 50px;
+  padding-top: 18px;
+}
+
+.cardPartThree1 p {
+  line-height: 1.5;
+  padding-top: 15px;
+}
+
+/* Layout Five */
+#layoutPartFive {
+  padding: 90px 0;
+}
+
+.flexlayoutFive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.fiveTextContent,
+.fiveImage {
+  flex: 1;
+}
+
+.fiveTextContent {
+  color: #3c0486;
+}
+
+.fiveTextContent h4 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.fiveTextContent h5 {
+  font-size: 22px;
+}
+
+.fiveTextContent p {
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+/* Layout Six */
+#bannerPartSix {
+  background: url(../images/bannerSix.png) no-repeat center/cover;
+}
+
+.flexBannerSix {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Layout Seven */
+#layoutPartSeven {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Layout Eight */
+#bodyLayout8 {
+  background: #4b0088;
+  padding: 40px 0;
+}
+
+.flexbody8 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Layout Nine */
+#bodyLayoutNine {
+  background: #3c0486;
+  padding: 40px 0;
+}
+
+.flexLayoutNine {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Tablet Responsive */
+@media (max-width: 991px) {
+  .menuList {
+    display: none;
+  }
+
+  .iconHeader {
     display: block;
-}
-/* Banner Part End */
+  }
 
+  #bannerPart {
+    padding-top: 70px;
+  }
 
-/* Body Part One Start */
-.flexBodyPartOne{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 58px;
-    padding-bottom: 58px;
+  .flexBanner,
+  .flexBodyPartOne,
+  .flexLayoutTwo,
+  .flexlayoutFive {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bannerContentText h1 {
+    font-size: 45px;
+  }
+
+  .bannerContentText p {
+    font-size: 20px;
+  }
+
+  .flexlayoutTwoCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flexBodyPartThreeCards {
+    flex-direction: column;
+  }
+
+  .flexiconPart {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flexBannerSix,
+  .flexbody8,
+  .flexLayoutNine {
+    flex-wrap: wrap;
+  }
 }
 
-.textOne{
-    color: #3c0486;
-    font-family: "Raleway", serif;
-}
-.textOne strong{
-    line-height: 32px;
-    font-size: 35px;
-}
-.textOne p{
-    line-height: 42px;
+/* Mobile Responsive */
+@media (max-width: 575px) {
+  .container {
+    width: 92%;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  #headerPart {
+    padding: 18px 0;
+  }
+
+  #bannerPart {
+    padding-top: 50px;
+  }
+
+  .bannerContentText h1 {
+    font-size: 34px;
+  }
+
+  .bannerContentText p {
+    font-size: 17px;
+  }
+
+  .bannerContentText a {
+    padding: 14px 25px;
+    font-size: 14px;
+  }
+
+  .textOne p {
+    font-size: 22px;
+  }
+
+  .textOne strong {
     font-size: 28px;
-}
+  }
 
-.textTwo{
-    color: #000000;
-    font-family: "Raleway", serif;
-}
-.textTwo p{
-    line-height: 32px;
-}
-.textTwo strong{
-    color: #3c0486;
-}
-/* Body Part One End */
+  .textTwo p {
+    font-size: 15px;
+  }
 
+  .textAndImage p {
+    font-size: 18px;
+  }
 
-/* Body Layout Part Two Start */
-#bodyLayoutTwo{
-    background: url(../images/Image+Background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.flexLayoutTwo{
-    display: flex;
-    align-items: end;
-    column-gap: 80px;
-    padding-top: 94px;
-}
-.textAndImage img{
-    display: block;
-}
-.textAndImage p{
-    color: #fff;
-    line-height: 22px;
-    font-family: "Raleway", serif;
-}
-.textAndImage p{
-    font-size: 22px;
-    line-height: 32px;
-}
-.textAndImage span{
-    font-size: 38px;
-    line-height: 42px;
-}
-.textAndImage strong{
-    font-size: 48px;
-    line-height: 42px;
-}
-
-.flexlayoutTwoCards div{
-    display: inline-flex;
-    padding-bottom: 40px;
-}
-.card1{
-    padding: 18px 30px 0 30px;
-    text-align: center;
-}
-.card1 p{
-    font-family: "Raleway", serif;
-    line-height: 30px;
-    color: #fff;
-}
-
-.card2{
-    padding: 18px 30px 0 30px;
-    text-align: center;
-}
-.card2 p{
-    font-family: "Raleway", serif;
-    line-height: 30px;
-    color: #fff;
-}
-
-
-.card3{
-    padding: 18px 30px 0 30px;
-    text-align: center;
-}
-.card3 p{
-    font-family: "Raleway", serif;
-    line-height: 30px;
-    color: #fff;
-}
-
-
-.card4{
-    padding: 18px 30px 0 30px;
-    text-align: center;
-}
-.card4 p{
-    font-family: "Raleway", serif;
-    line-height: 30px;
-    color: #fff;
-}
-
-
-.card5{
-    padding: 18px 30px 0 30px;
-    text-align: center;
-}
-.card5 p{
-    font-family: "Raleway", serif;
-    line-height: 30px;
-    color: #fff;
-}
-
-
-.card6{
-    padding: 18px 30px 0 30px;
-    text-align: center;
-}
-.card6 p{
-    font-family: "Raleway", serif;
-    line-height: 30px;
-    color: #fff;
-}
-/* Body Layout Part Two End */
-
-
-/* Body Layout Part Three Start */
-#bodyPartThree{
-    padding-top: 98px;
-    padding-bottom: 80px;
-}
-
-
-p .paraEdit{
-    font-family: "Raleway", serif;
-    color: #3c0486;
-    font-size: 22px;
-}
-
-.bodyPartTheeText p{
-    font-family: "Raleway", serif;
-    color: #3c0486;
-    font-size: 40px;
-    line-height: 42px;
-}
-
-
-.flexBodyPartThreeCards{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px 0;
-}
-/* Body Layout Part Three End */
-
-/* Body Layout Part Four Start */
-#partFourLayout{
-    background: url(../images/layoutFour.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 134px;
-    padding-bottom: 122px;
-}
-
-.textPartThree p, span{
-    color: #F3F1D8;
-    font-family: "Raleway", serif;
-}
-.textPartThree p{
+  .textAndImage span {
     font-size: 28px;
-}
-.textPartThree span{
-    font-size: 48px;
-}
+  }
 
-.flexiconPart{
-    display: flex;
-    align-items: center;
-    padding-top: 46px;
-}
+  .textAndImage strong {
+    font-size: 34px;
+  }
 
-.cardPartThree1{
-    padding: 18px 30px 0 30px;
+  .flexlayoutTwoCards {
+    grid-template-columns: 1fr;
+  }
+
+  .bodyPartTheeText p {
+    font-size: 28px;
     text-align: center;
-    font-family: "Raleway", serif;
-}
-.cardPartThree1 p{
-    color: #F3F1D8;
-    padding: 18px 30px 0 30px;
+  }
+
+  .textPartThree {
     text-align: center;
-    line-height: 28px;
-}
-.cardPartThree1 h1{
-    color: #F3F1D8;
-    padding: 18px 30px 0 30px;
-    text-align: center;
-    font-size: 53px;
-}
-/* Body Layout Part Four End */
+  }
 
+  .textPartThree p {
+    font-size: 20px;
+  }
 
+  .textPartThree span {
+    font-size: 32px;
+  }
 
-/* Body Layout Part Five Start */
-#layoutPartFive{
-    padding-top: 99px;
-    padding-bottom: 92px;
-}
-.flexlayoutFive{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
+  .flexiconPart {
+    grid-template-columns: 1fr;
+  }
 
-.fiveTextContent{
-    width: 50%;
-    color: #3c0486;
-    font-family: "Raleway", serif;
-}
-.fiveTextContent h4{
-    font-size: 48px;
-    line-height: 55px;
-    
-}
-.fiveTextContent h5{
-    font-size: 22px; 
-}
-.fiveTextContent p{
-    font-size: 22px;
-    line-height: 30px;
-    padding-bottom: 10px;
-}
-/* Body Layout Part Five End */
+  .fiveTextContent h4 {
+    font-size: 32px;
+  }
 
+  .fiveTextContent p {
+    font-size: 16px;
+  }
 
-/* Body Layout Part Six Start */
-#bannerPartSix{
-    background: url(../images/bannerSix.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  .flexBannerSix,
+  .flexbody8,
+  .flexLayoutNine {
+    flex-direction: column;
+  }
 }
-.flexBannerSix{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.picOne img{
-    display: block;
-}
-/* Body Layout Part Six End */
-
-
-/* Body Layout Part Seven Start */
-#layoutPartSeven{
-    text-align: center;
-    padding: 50px 0;
-}
-/* Body Layout Part Seven End */
-
-
-/* Body Layout Part 8 Start */
-#bodyLayout8{
-    background: #4B0088;
-}
-.flexbody8{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-/* Body Layout Part 8 End */
-
-
-/* Body Layout Part Nine Start */
-#bodyLayoutNine{
-    background: #3c0486;
-}
-.flexLayoutNine{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-/* Body Layout Part Nine End */
